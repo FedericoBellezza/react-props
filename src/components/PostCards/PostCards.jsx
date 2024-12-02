@@ -1,15 +1,15 @@
 function labelColor(tag) {
   if (tag == "js") {
-    return "bg-warning badge p-3";
+    return "bg-warning";
   }
   if (tag == "css") {
-    return "bg-primary badge p-3";
+    return "bg-primary";
   }
   if (tag == "html") {
-    return "bg-orange badge p-3";
+    return "bg-orange";
   }
   if (tag == "php") {
-    return "bg-lightblue badge p-3";
+    return "bg-lightblue";
   }
 }
 
@@ -30,7 +30,7 @@ export default function PostCards({ data }) {
               <h5 className="card-title">{data.title}</h5>
               <p className="card-text">{data.content}</p>
               {data.tags.map((tag) => (
-                <span className={labelColor(tag)}>{tag}</span>
+                <span className={labelColor(tag) + " badge p-3"}>{tag}</span>
               ))}
             </div>
           </div>
@@ -39,3 +39,5 @@ export default function PostCards({ data }) {
     );
   }
 }
+
+export { labelColor };
