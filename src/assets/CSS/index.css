@@ -32,3 +32,15 @@ footer p {
 .page-container {
   min-height: 100vh;
 }
+
+.bg-orange {
+  background-color: rgb(223, 134, 2);
+}
+.bg-lightblue {
+  background-color: rgb(112, 143, 153);
+}
+
+.badge {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
