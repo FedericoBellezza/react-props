@@ -17,7 +17,7 @@ export default function () {
         <h1 className="mt-5">Il mio blog</h1>
 
         {tagList.map((e) => (
-          <span className={labelColor(e) + " badge mt-5"}>{e}</span>
+          <span className={labelColor(e) + " badge mt-5 p-3"}>{e}</span>
         ))}
       </header>
     </>
